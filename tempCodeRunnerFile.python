@@ -1,0 +1,3 @@
+multidimensional_array = [[1, 3], [4,0], [2,1], [7,3], [9,9]]
+sorted_array = multidimensional_array.sort(reverse=False, key=lambda x:x[1])
+print(multidimensional_array)
