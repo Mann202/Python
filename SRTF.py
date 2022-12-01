@@ -20,6 +20,7 @@ waitTime = [0] * (n + 1)
 
 # Nhập vào ID, BurstTime và ArrivalTime theo thứ tự n
 for i in range(n):  # Chạy vòng lặp
+    print(\n)
     IDOfProcess[i] = int(input("Enter the ID Of Process {}: ".format(i + 1)))
     BurstTime[i] = int(input('Enter the burst time for process {} : '.format(i + 1)))
     ArrivalTime[i] = int(input('Enter the arrival time for process {} : '.format(i + 1))) 
@@ -56,4 +57,4 @@ print('ID\tBurstTime\tArrivalTime\tFinishTime\tTurnTime\tWaitTime')
 for i in range(len(finishTime)):    # Chạy vòng lặp với độ dài của mảng Finish Time
 	print("{}\t{}\t\t{}\t\t{}\t\t{}\t\t{}\n".format(IDOfProcess[i], BurstTime[i], ArrivalTime[i], finishTime[i], turnTime[i], waitTime[i]))   #In ra màn hình kết quả
 print('Average Waiting Time = ', sum(waitTime)/len(waitTime))   # Tính toán và in ra màn hình kết quả của thời gian đợi trung bình
-print('Average Turnaround Time = ', sum(turnTime)/len(turnTime))    # Tính toán và in ra màn hình kết quả của thời gian hoàn thành trung bình
+print('Average Turnaround Time = ', round(sum(turnTime)/len(turnTime),3))    # Tính toán và in ra màn hình kết quả của thời gian hoàn thành trung bình (có làm tròn đến chữ số thập phân thứ 3)
