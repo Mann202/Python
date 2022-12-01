@@ -25,7 +25,6 @@ for i in range(n):  # Chạy vòng lặp
     ArrivalTime[i] = int(input('Enter the arrival time for process {} : '.format(i + 1))) 
     Process[i] = [BurstTime[i], ArrivalTime[i], IDOfProcess[i], i]  # Cho BurstTime, ArrivalTime, ID Process và thứ tự Process vào một mảng Process
 
-#bt = [[7, 0, 7, 0], [5, 1, 5, 1], [3, 2, 3, 2], [1, 3, 1, 3], [2, 4, 2, 4], [1, 5, 1, 5]]
 # Xóa phần tử 0 xuất hiện khi tạo mảng
 Process.pop(-1) 
 finishTime.pop(-1)
